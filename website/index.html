@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+ <body>
+<div id = "app">
+  <div class ="holder-headline">
+    <div class="headline-title">
+    Weather Journal App
+    </div>
+    <div class ="headline-day-night">
+    </div>
+  </div>
+  <div class ="holder-day">
+    Hello, it's <span id="hello-its"></span> today!
+  </div>
+  <div class ="holder-zip">
+    <label for="zip">Enter Zipcode here</label>
+    <input type="text" id="zip" placeholder="">
+  </div>
+  <div class ="holder-feel">
+    <label for="feelings">How are you feeling today?</label>
+    <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here.." rows="3" cols="48" maxlength="150"></textarea>
+    <div id="count">
+      <span id="current">0</span>
+      <span id="maximum">&nbsp;/ 150</span>
+    </div>
+    <button id="generate" type = "submit"> send </button>
+  </div>
+  <div class ="holder-entry">
+    <div class = "title">Your most recent entry</div>
+   <div id = "entryHolder">
+    <div id = "content">...</div>  
+     <div id = "date"></div> 
+   <div id = "temp-c">
+    <div id = "temp"></div>
+    <div id = "c"></div>
+    <div id = "nature">Nature: </div>
+    <div id = "city">City: </div>
+   </div>
+   </div>
+   <div id = "location">
+     <div id = "country">Country: </div>
+     <div id = "humidity">Humidity: </div>
+   </div>
+   
+  </div>
+  </div>
+  </div>
+<script src="app.js" type="text/javascript"></script>
+
+</body>
+</html>

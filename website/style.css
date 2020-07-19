@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Quicksand&display=swap');
+@import "hover.css";
+
+#app{
+    width: 320pt;
+    /* height: 600pt; */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background: linear-gradient(0deg, #f96d80, #ea907a);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #fffff8;
+    padding: 10px;
+    border-radius: 15px;
+
+  }
+
+.holder-headline {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+
+}
+
+.headline-title {  
+    font-family: 'Quicksand';
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 19px;
+    padding-left: 50px;
+}
+
+.headline-day-night {
+    font-family: 'Fredoka One', serif;
+    color: #FFFFFF;
+    opacity: 0.8;
+    opacity: 0.6;
+    width: 100px;
+    height: 100px;
+}
+
+#hello-its {
+    color: white;
+}
+
+.holder-day {
+    font-family: 'Fredoka One', serif;
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 40px;
+    align-self: center;
+
+}
+
+.holder-entry {
+    /* display: grid;
+    grid-template-columns: auto 1.5fr;
+    grid-template-rows: auto 1.5fr;
+    grid-template-areas: "date content" "temp content"; */
+    font-family: 'Fredoka One', serif;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.entry{
+    background: rgba(59, 74, 107, .4);
+}
+
+.title{
+    font-family: 'Fredoka One', serif;
+    color: #FFFFFF;
+    font-size: 27px;
+    text-transform: none;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+} 
+
+#entryHolder {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto 1.5fr;
+    grid-template-areas: "date content" "temp content";
+}  
+
+#content { 
+    grid-area: content; 
+    padding-left: 25px;
+    font-family: 'Quicksand';
+    text-transform: none;
+    letter-spacing: 1px;
+    font-size: 15px;;
+}
+      
+#date { 
+    font-family: 'Quicksand';
+    grid-area: date; 
+    border-bottom: 2px dotted;
+    padding-bottom: 10px;
+}
+    
+#temp-c { 
+    grid-area: temp; 
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    padding-top: 5px;
+}
+#weather {
+
+}
+
+#c { 
+    padding-left: 10px;
+}
+
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background: #fffff8;
+    opacity: 0.5;
+    color: hsl(223, 14%, 30%);
+    font-size: 15px;
+    padding-left: 20px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 15px;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Fredoka One', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+    color: hsl(0, 0%, 88%);
+    background:hsl(178, 23%, 50%);
+    box-shadow: inset 0 -13px 0 -10px rgba(0,0,0,0.17);
+    text-align: center;
+    position: relative;
+}
+
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background: #fffff8;
+    opacity: 0.5;
+    color: grey;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 20px;
+    resize: none;
+    border: 0px;
+    border-radius: 10px;
+    font-family: 'Quicksand';
+
+}
+
+label {
+    font-family: 'Fredoka One', serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 12px;
+    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-left: 10px;
+    display:inline-block;
+
+}
+
+#count {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Fredoka One', serif;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-size: 12px;
+    padding-top: 0px;
+    padding-right: 8px;
+}
+
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: grey; 
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: grey; 
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: grey; 
+
+} 
