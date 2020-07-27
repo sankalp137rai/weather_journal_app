@@ -16,3 +16,5 @@ Set up a function that updated UI dynamically.
 
 
 ## Result (Design)
+
+![](website/demo.png)
